@@ -62,14 +62,6 @@ Uygulama başlatıldığında, ana ekranda bir "TODO APP" başlığı ve bir bo�
 - **TodoItem.js**: Her bir yapılacak öğesini temsil eden bileşen. İşleri işaretlemek ve silmek için kullanılır.
 - **TodoList.js**: Yapılacaklar listesini görüntülemek için kullanılan bileşen.
 
-## Geliştirme
+## Test
 
-Uygulama, React Native ve Expo framework'ü kullanılarak geliştirilmiştir. İlgili dosyaları düzenleyerek veya yeni özellikler ekleyerek geliştirmeye devam edebilirsiniz.
-
-## Katkıda Bulunma
-
-Katkıda bulunmak istiyorsanız, açık bir GitHub issues oluşturabilir veya bir pull isteği gönderebilirsiniz. Katkılarınızı memnuniyetle karşılarız.
-
-## Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakın.
+Bu uygulama Jest ile test edilmektedir. Test basit bir kullanıcı senaryosu ile kullanıcının görev ekleme, silme ve düzenleme davranışlarını test etmektedir.
