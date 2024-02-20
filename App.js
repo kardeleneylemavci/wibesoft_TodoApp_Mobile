@@ -4,10 +4,12 @@ import { AntDesign } from '@expo/vector-icons';
 import { ProgressBar } from 'react-native-paper';
 
 const App = () => {
+  // State'ler tanımlanır.
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState('');
   const [progresses, setProgresses] = useState({});
 
+  // Yeni bir todo eklemek için kullanılan fonksiyon.
   const addTodo = () => {
     if (text.trim() !== '') {
       const newTodo = {
@@ -21,6 +23,7 @@ const App = () => {
     }
   };
 
+  // Bir todo'nun tamamlanma durumunu değiştirmek için kullanılan fonksiyon.
   const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) =>
@@ -29,6 +32,7 @@ const App = () => {
     );
   };
 
+  // Bir todo'yu silmek için kullanılan fonksiyon.
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
     const newProgresses = {...progresses};
@@ -36,10 +40,12 @@ const App = () => {
     setProgresses(newProgresses);
   };
 
+  // Bir todo'nun ilerleme durumunu güncellemek için kullanılan fonksiyon.
   const updateProgress = (id, value) => {
     setProgresses({...progresses, [id]: value});
   };
 
+  // Her bir todo öğesi için render edilen öğe.
   const renderItem = ({ item }) => (
     <View style={styles.item}>
       <View style={styles.taskRow}>
@@ -76,6 +82,7 @@ const App = () => {
     </View>
   );
 
+  // Uygulamanın görünümü
   return (
     <View style={styles.container}>
       <Text style={styles.header}>TODO APP</Text>
@@ -102,6 +109,7 @@ const App = () => {
   );
 };
 
+// Stil tanımlamaları
 const styles = StyleSheet.create({
   container: {
     flex: 1,
