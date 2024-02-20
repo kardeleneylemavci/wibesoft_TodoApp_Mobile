@@ -65,3 +65,8 @@ Uygulama başlatıldığında, ana ekranda bir "TODO APP" başlığı ve bir bo�
 ## Test
 
 Bu uygulama Jest ile test edilmektedir. Test basit bir kullanıcı senaryosu ile kullanıcının görev ekleme, silme ve düzenleme davranışlarını test etmektedir.
+
+## Ekran Görüntüsü
+
+![Ana Ekran](assets/mobile2.png)
+*Ana Ekran: Uygulamanın ana ekranı.*
